@@ -625,6 +625,47 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "get available seats by show id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{api_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/booking/available/5f7ddd310a852a4f581ccc86",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"booking",
+								"available",
+								"5f7ddd310a852a4f581ccc86"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
